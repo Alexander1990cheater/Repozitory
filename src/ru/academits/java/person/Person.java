@@ -4,12 +4,15 @@ public class Person {
     private String name;
     private String middleName;
     private String familyName;
+    private Integer age;
 
-    public Person(String name, String middleName, String familyName) {
+    public Person(String name, String middleName, String familyName, Integer age) {
         this.name = name;
         this.middleName = middleName;
         this.familyName = familyName;
+        this.age = age;
     }
+
 
     public String getName() {
         return name;
@@ -40,5 +43,11 @@ public class Person {
 
     public void setFamilyName(String familyName) {
         this.familyName = familyName;
+    }
+    public Integer getAge() {
+        return age;
+    }
+    public void setAge(Integer age) {
+        this.age = age;
     }
 }

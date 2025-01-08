@@ -18,11 +18,13 @@ public class main_person {
         String name = "Александр";
         String middleName = "Владимирович";
         String familyName = "Мейснер";
+        Integer age = 34;
 
 
-        Person person = new Person(name, middleName, familyName);
+        Person person = new Person(name, middleName, familyName, age);
         System.out.println("Первоначальное имя = " + person.getName());
         person.setName("");
         System.out.println("Текущее имя " + person.getName());
+        System.out.println("Возраст человека " + age);
     }
 }
